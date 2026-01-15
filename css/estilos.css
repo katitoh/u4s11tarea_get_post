@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #0b1220;
+}
+
+.contenedor {
+  max-width: 920px;
+  margin: 28px auto;
+  padding: 14px;
+}
+
+.encabezado {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 18px 18px 12px 18px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+  color: #0f172a;
+  letter-spacing: 0.4px;
+}
+
+.encabezado p {
+  margin: 10px 0 0 0;
+  color: #334155;
+}
+
+.tarjeta {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.btn-sec {
+  background: #0ea5e9;
+}
+
+.btn-enviar {
+  background: #16a34a;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mini-item {
+  background: rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+}
+
+.mini-item h3 {
+  margin: 0 0 6px 0;
+  color: #0f172a;
+}
+
+.mini-item p {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.formulario {
+  margin-top: 10px;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: #2563eb;
+}
+
+.titulo-seccion {
+  margin: 6px 0 8px 0;
+  color: #0f172a;
+}
+
+.texto-seccion {
+  margin: 0;
+  color: #334155;
+}
+
+.resultado p {
+  margin: 8px 0;
+  color: #0f172a;
+}
+
+.nota {
+  color: #475569;
+  margin: 0;
+}
+
+.linea {
+  height: 1px;
+  background: rgba(15, 23, 42, 0.15);
+  margin: 14px 0;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pie {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+@media (max-width: 720px) {
+  .mini {
+    grid-template-columns: 1fr;
+  }
+
+  .fila {
+    grid-template-columns: 1fr;
+  }
+}
