@@ -25,7 +25,7 @@ $correo = $_POST["correo"] ?? "";
                 <p><strong>Nombre:</strong> <?= $nombre ?></p>
                 <p><strong>Apellido:</strong> <?= $apellido ?></p>
                 <p><strong>Edad:</strong> <?= $edad ?></p>
-                <p><strong>Correo:</strong> <?= $correo ?></p>
+                <p><strong>Correo :</strong> <?= $correo ?></p>
             </div>
 
             <div class="linea"></div>
